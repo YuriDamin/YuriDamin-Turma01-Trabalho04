@@ -9,9 +9,9 @@ export const RateContentOK = new Rate('content_OK');
 
 export const options = {
   thresholds: {
-    http_req_failed: ['rate<0.12'], // Taxa de falhas < 30%
-    get_countries: ['p(99)<5700'], // Tempo de resposta no P99 < 1000ms
-    content_OK: ['rate>0.95'] // Taxa de respostas 200 > 95%
+    http_req_failed: ['rate<0.12'], 
+    get_countries: ['p(99)<5700'], 
+    content_OK: ['rate>0.95'] 
   },
   stages: [
     { duration: '30s', target: 10 },
