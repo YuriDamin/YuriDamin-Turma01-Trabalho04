@@ -30,7 +30,7 @@ export function handleSummary(data) {
 }
 
 export default function () {
-  const baseUrl = 'https://restcountries.com/v3.1/all';
+  const baseUrl = 'https://restcountries.com/v3.1/name/brazil';
 
   const params = {
     headers: {
